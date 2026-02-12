@@ -1,6 +1,4 @@
-#  I’ll now generate a complete [README.md](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/venka/.vscode/extensions/openai.chatgpt-0.4.73-win32-x64/webview/#) + update [system-design.md](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/venka/.vscode/extensions/openai.chatgpt-0.4.73-win32-x64/webview/#) to match current behavior.
-
- \n Urumi Store Provisioning Platform (Round 1)
+ \n Urumi Store Provisioning Platform 
 
 WooCommerce-focused store provisioning platform on Kubernetes, designed to run locally and on VPS/k3s with Helm values changes only.
 
