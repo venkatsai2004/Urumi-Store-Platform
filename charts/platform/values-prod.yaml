@@ -1,0 +1,7 @@
+domainSuffix: urumi.ai
+
+ingress:
+  tls: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  secretName: urumi-tls 

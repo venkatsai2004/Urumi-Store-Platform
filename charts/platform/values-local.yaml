@@ -1,0 +1,5 @@
+domainSuffix: localhost          
+ingress:
+  enabled: true
+  className: nginx               
+  tls: false          

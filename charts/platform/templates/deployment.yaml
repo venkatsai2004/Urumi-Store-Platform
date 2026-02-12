@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: urumi-platform
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: urumi-platform
+  template:
+    metadata:
+      labels:
+        app: urumi-platform
+    spec:
+      containers:
+        - name: backend
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DOMAIN_SUFFIX
+              value: "{{ .Values.domainSuffix }}"
+          resources:
+            {{ toYaml .Values.resources | nindent 12 }}

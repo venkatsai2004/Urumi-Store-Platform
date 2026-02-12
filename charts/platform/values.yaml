@@ -1,0 +1,32 @@
+domainSuffix: localhost 
+
+replicaCount: 1
+
+image:
+  repository: urumi-backend
+  tag: v11 
+  pullPolicy: IfNotPresent 
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 300m
+    memory: 128Mi
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  tls: false 
+  hosts:
+    - host: dashboard.localhost
+      paths:
+        - path: /
+          pathType: Prefix
