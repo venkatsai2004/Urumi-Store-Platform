@@ -1,4 +1,4 @@
- \n Urumi Store Provisioning Platform 
+## Urumi Store Provisioning Platform 
 
 WooCommerce-focused store provisioning platform on Kubernetes, designed to run locally and on VPS/k3s with Helm values changes only.
 
@@ -156,7 +156,6 @@ Note: payment provider integration is not required for Round 1; test/dummy check
 ## Demo and Submission
 
 * Demo video: add your final link here
-* GitHub repo: add your final link here
 * Form URL (given in assignment): `https://dashboard.urumi.ai/s/roundoneform2026sde`
 
 
